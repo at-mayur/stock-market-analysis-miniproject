@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis</title>
+
+    <link rel="stylesheet" href="./styles/indexStyles.css">
+</head>
+<body>
+
+    <h1 class="text-center">Stock Market Analysis</h1>
+    
+    <!-- main container -->
+    <div class="container">
+
+        <!-- container for chart and summary -->
+        <div class="chart-summary-container overscroll">
+
+            <!-- chart container -->
+            <div class="chart-container">
+                <div class="chart-details">
+                    <p id="chart-name" class="chart-name"></p>
+                    <p class="chart-min-max"><span class="loss">Min:</span> <span id="chart-min-val"></span></p>
+                    <p class="chart-min-max"><span class="profit">Max:</span> <span id="chart-max-val"></span></p>
+                </div>
+
+                <!-- chart -->
+                <div id="chart" class="chart">
+                    <div id="curr-value-container">
+                        <p id="curr-time" class="text-center"></p>
+                        <p id="curr-value" class="text-center"></p>
+                    </div>
+                </div>
+
+                <div class="durr">
+                    <p id="month1">1 Month</p>
+                    <p id="month3">3 Months</p>
+                    <p id="year1">1 Year</p>
+                    <p id="year5">5 Years</p>
+                </div>
+            </div>
+
+            <!-- summary container -->
+            <div class="summary-container">
+                <div class="summary-stock-value">
+                    <h3 id="stock-name"></h3>
+                    <h3 id="profit"></h3>
+                    <h3 id="book-value"></h3>
+                </div>
+                <p id="stock-summary">
+                    
+                </p>
+            </div>
+        </div>
+
+        <!-- stock list container -->
+        <div class="book-value-container overscroll">
+            <ul id="stock-list">
+                
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./scripts/indexScript.js"></script>
+</body>
+</html>
